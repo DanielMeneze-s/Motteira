@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Mondwest";
+  src: url("../resources/fonts/Mondwest-Regular.woff2") format("woff2"),
+    url("../resources/fonts/Mondwest-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeueBit";
+  src: url("../resources/fonts/NeueBit-Regular.woff2") format("woff2"),
+    url("../resources/fonts/NeueBit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "zurichlight";
+  src: url("../resources/fonts/zurich-light-bt-webfont.woff2") format("woff2"),
+    url("../resources/fonts/zurich-light-bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#tudo_container {
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+}
+
+.title_background {
+  width: 1135px;
+  height: 969px;
+  position: absolute;
+  top: 0.1vh;
+  left: 20vw;
+  z-index: -1;
+  background: url("../resources/img/pages/home/GradientMap1.png") no-repeat
+    center center;
+  background-size: 1135px 850px;
+  transform: scale(1.1);
+}
+
+.h1zada {
+  display: inline-block;
+  position: absolute;
+  top: 38.8vh;
+  left: 21.15vw;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#creative {
+  text-align: initial;
+  align-items: initial;
+  padding-right: 332px;
+}
+
+#art_director {
+  display: inline-block;
+}
+
+#art {
+  display: inline-block;
+  font-size: 70px;
+  line-height: 115px;
+  color: #242323;
+  font-family: "zurichlight";
+  vertical-align: 31px;
+}
+
+#home_image {
+  min-width: 116px;
+  min-height: 95.4px;
+  background-color: #d80000;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+#bottom_wrapper {
+  display: flex;
+  position: absolute;
+  top: 779.5605px;
+  left: 406px;
+  min-width: 1060px;
+}
+
+#currently_job {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 26px;
+  color: #242323;
+  font-weight: 300;
+  font-family: "zurichlight";
+  pointer-events: none;
+}
+
+#based {
+  position: absolute;
+  top: -34px;
+  right: 0px;
+  display: flex;
+  min-width: 630px;
+  min-height: 97px;
+}
+
+h2 {
+  position: absolute;
+  font-size: 100px;
+  line-height: 100px;
+  color: #242323;
+  font-family: "NeueBit";
+  font-weight: 500;
+  pointer-events: none;
+}
+
+#ask_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "NeueBit";
+  width: 20px;
+  height: 20px;
+  background-color: #242323;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#ask {
+  visibility: hidden;
+  position: absolute;
+  right: -333px;
+  bottom: 98px;
+  word-wrap: break-word;
+  font-family: "NeueBit";
+  font-size: 30px;
+}
+
+#ask_icon:hover + #ask {
+  visibility: visible;
+}
+
+#currently_home {
+  display: inline-block;
+  width: 51px;
+  height: 2px;
+  background: #000000;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #c6ff02;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0) skewX(0);
+  transform-origin: top left;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}

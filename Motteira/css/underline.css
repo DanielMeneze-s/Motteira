@@ -1,0 +1,700 @@
+/*PROJECT ONE*/
+.project_title_one_one:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  bottom: -2px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.box:hover .project_title_one_one {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover .project_title_one_one:after {
+  width: 400px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.project_title_two_one:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  left: 604px;
+  bottom: -2px;
+  -webkit-transition: all 0.29s;
+  -moz-transition: all 0.29s;
+  -ms-transition: all 0.29s;
+  -o-transition: all 0.29s;
+  transition: all 0.29s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.box:hover .project_title_two_one {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover .project_title_two_one:after {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  width: 275px;
+}
+
+/*PROJECT TWO*/
+.project_title_two_two {
+  display: inline;
+  text-decoration: none;
+  padding-right: 5px;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_two_two:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  left: 332px;
+  bottom: -2px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover .project_title_two_two {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box:hover .project_title_two_two:after {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  width: 269px;
+}
+
+/*PROJECT THREE*/
+.project_title_one_three {
+  display: inline;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_two_three {
+  display: inline;
+  text-decoration: none;
+  padding-right: 5px;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_one_three:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  bottom: -2px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.box:hover .project_title_one_three {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover .project_title_one_three:after {
+  width: 299px;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.project_title_two_three:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  left: 592px;
+  bottom: -2px;
+  -webkit-transition: all 0.29s;
+  -moz-transition: all 0.29s;
+  -ms-transition: all 0.29s;
+  -o-transition: all 0.29s;
+  transition: all 0.29s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover .project_title_two_three {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover .project_title_two_three:after {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  width: 193.5px;
+}
+
+/*PROJECT FOR*/
+.project_title_one_for {
+  display: inline;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_two_for {
+  display: inline;
+  text-decoration: none;
+  padding-right: 5px;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_one_for:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  bottom: -2px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.box:hover .project_title_one_for {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover .project_title_one_for:after {
+  width: 252px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.project_title_two_for:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  left: 495px;
+  bottom: -2px;
+  -webkit-transition: all 0.29s;
+  -moz-transition: all 0.29s;
+  -ms-transition: all 0.29s;
+  -o-transition: all 0.29s;
+  transition: all 0.29s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.box:hover .project_title_two_for {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover .project_title_two_for:after {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  width: 165px;
+}
+
+/*PROJECT FIVE*/
+.project_title_one_five {
+  display: inline;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_two_five {
+  display: inline;
+  text-decoration: none;
+  padding-right: 5px;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_one_five:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  left: 411px;
+  bottom: -2px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.box:hover .project_title_one_five {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.box:hover .project_title_one_five:after {
+  width: 277px;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.project_title_two_five:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  left: 774.5px;
+  bottom: -2px;
+  -webkit-transition: all 0.29s;
+  -moz-transition: all 0.29s;
+  -ms-transition: all 0.29s;
+  -o-transition: all 0.29s;
+  transition: all 0.29s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover .project_title_two_five {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover .project_title_two_five:after {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  width: 197px;
+}
+
+/*PROJECT SIX*/
+.project_title_one_six {
+  display: inline;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_two_six {
+  display: inline;
+  text-decoration: none;
+  padding-right: 5px;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_one_six:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  bottom: -2px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.box:hover .project_title_one_six {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover .project_title_one_six:after {
+  width: 163px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.project_title_two_six:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #212121;
+  position: absolute;
+  left: 400px;
+  bottom: -2px;
+  -webkit-transition: all 0.29s;
+  -moz-transition: all 0.29s;
+  -ms-transition: all 0.29s;
+  -o-transition: all 0.29s;
+  transition: all 0.29s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.box:hover .project_title_two_six {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover .project_title_two_six:after {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  width: 195px;
+}
+
+/*PROJECT CLIENT*/
+.project_client {
+  display: inline;
+  font-size: 40px;
+  vertical-align: 19%;
+  letter-spacing: -3px;
+  line-height: 113px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+  padding-right: 4px;
+}
+
+/*PROJECT CLIENT ONE*/
+#project_client_one:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #212121;
+  position: absolute;
+  bottom: -2px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#project_client_one:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #212121;
+  position: absolute;
+  left: 976.3px;
+  bottom: 29px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover #project_client_one {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover #project_client_one:after {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  width: 173px;
+}
+
+/*PROJECT CLIENT TWO*/
+#project_client_two:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #212121;
+  position: absolute;
+  left: -2px;
+  bottom: 29px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.box:hover #project_client_two {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box:hover #project_client_two:after {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 132px;
+}
+
+/*PROJECT CLIENT THREE*/
+#project_client_three:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #212121;
+  position: absolute;
+  left: 1px;
+  bottom: 29px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.box:hover #project_client_three {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box:hover #project_client_three:after {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 206px;
+}
+
+/*PROJECT CLIENT FOR*/
+#project_client_for:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #212121;
+  position: absolute;
+  left: 680.5px;
+  bottom: 29px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box:hover #project_client_for {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box:hover #project_client_for:after {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  width: 199px;
+}
+
+/*PROJECT CLIENT FIVE*/
+#project_client_five:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #212121;
+  position: absolute;
+  left: 1px;
+  bottom: 29px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.box:hover #project_client_five {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box:hover #project_client_five:after {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 208px;
+}
+
+/*PROJECT CLIENT SIX*/
+#project_client_six:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #212121;
+  position: absolute;
+  left: 615px;
+  bottom: 29px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  -ms-transition: all 0.33s;
+  -o-transition: all 0.33s;
+  transition: all 0.33s;
+}
+
+.box:hover #project_client_six {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.box:hover #project_client_six:after {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  width: 49px;
+}

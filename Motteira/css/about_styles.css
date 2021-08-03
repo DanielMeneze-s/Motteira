@@ -1,0 +1,620 @@
+@font-face {
+  font-family: "zurichlight";
+  src: url("../resources/fonts/zurich-light-bt-webfont.woff2") format("woff2"),
+    url("../resources/fonts/zurich-light-bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "zurichroman";
+  src: url("../resources/fonts/zurich-bt-webfont.woff2") format("woff2"),
+    url("../resources/fonts/zurich-bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeueBit";
+  src: url("../resources/fonts/NeueBit-Regular.woff2") format("woff2"),
+    url("../resources/fonts/NeueBit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neuebitbold";
+  src: url("../resources/fonts/neuebit-bold-webfont.woff2") format("woff2"),
+    url("../resources/fonts/neuebit-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#currently_about {
+  display: inline-block;
+  width: 52px;
+  height: 2px;
+  background: #000000;
+}
+
+/*palavras rolantes*/
+h1 {
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 45.5px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+  white-space: nowrap;
+  animation: marquee 6s linear infinite;
+  background-color: #c6ff02;
+  height: 45px;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  max-height: 59px;
+  bottom: -0.2px;
+  right: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(-21.1vw, 0);
+  }
+}
+
+/*capa*/
+#cover_image {
+  position: relative;
+  left: 0;
+  top: 0;
+  max-height: 969px;
+  min-width: 1903px;
+}
+
+#cover_image > img {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+/*informacoes do about*/
+#quasetudo_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 103vh;
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #dddddd;
+  background: url("/resources/img/pages/about/Layer7.png") no-repeat;
+  background-position: 163px 184px;
+}
+
+.division_line {
+  width: 1150px;
+  height: 1px;
+  background-color: black;
+}
+
+.informalinha {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 25px;
+  left: 377px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  color: #242323;
+  font-weight: 300;
+  font-family: "zurichlight";
+  min-height: 16px;
+}
+
+.informalinha a {
+  font-size: 25px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  color: #242323;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+#name {
+  font-size: 107.524px;
+  letter-spacing: -6px;
+  line-height: 105px;
+  padding-top: 80px;
+  font-family: "zurichroman";
+}
+
+#especial {
+  display: inline-block;
+  font-family: "neuebitbold";
+  font-size: 107.524px;
+}
+
+#especial2 {
+  display: inline-block;
+  font-family: "NeueBit";
+  font-size: 22px;
+}
+
+#especial3 {
+  display: inline-block;
+  font-family: "neuebitbold";
+}
+
+#especial4 {
+  display: inline-block;
+  font-family: "NeueBit";
+  font-size: 22px;
+}
+
+#age {
+  position: absolute;
+  left: 910px;
+  bottom: 0;
+  height: 191px;
+  font-size: 53.762px;
+  font-family: "zurichlight";
+  line-height: 2.102;
+  letter-spacing: -4px;
+  padding-top: 84px;
+}
+
+#box2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 180px;
+}
+
+#linkedin {
+  padding-left: 293px;
+}
+
+#playlist {
+  padding-left: 293px;
+}
+
+#email_name {
+  position: absolute;
+  left: 549px;
+}
+
+#based_name {
+  position: absolute;
+  left: 882px;
+}
+
+#instagram_name {
+  position: absolute;
+  left: 780.4px;
+}
+
+#based_name2 {
+  position: absolute;
+  left: 882px;
+}
+
+#linkedin_name {
+  position: absolute;
+  left: 681px;
+}
+
+#playlist_name {
+  position: absolute;
+  left: 744px;
+}
+
+#playlist_underline {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  top: 27px;
+}
+
+#linkedin_underline {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  top: 27px;
+}
+
+#instagram_underline {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  top: 27px;
+}
+
+#playlist_name:hover #playlist_underline {
+  width: 103px;
+  transition-duration: 0.4s;
+}
+
+#linkedin_name:hover #linkedin_underline {
+  width: 187px;
+  transition-duration: 0.4s;
+}
+
+#instagram_name:hover #instagram_underline {
+  width: 88px;
+  transition-duration: 0.4s;
+}
+
+#box3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 242px;
+}
+
+#agency_work {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#experience {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#work1 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#work2 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#work3 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#work4 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#company_type1 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#company_type2 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#company_type3 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#company_type4 {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_position1 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_position2 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_position3 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_position4 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_type1 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_type2 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_type3 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#job_type4 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#month1 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#month2 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#month3 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#month4 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#year1 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#year2 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#year3 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#year4 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.margin {
+  margin-top: 21px;
+}
+
+#box4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 143px;
+}
+
+#scholarity {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#course {
+  position: absolute;
+  left: 293px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#premiation {
+  position: absolute;
+  left: 560px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#premiation_type {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#awards {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#facul {
+  position: absolute;
+  left: 293px;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#premiation {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#premiation2 {
+  position: absolute;
+  left: 589px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+#premiation_type2 {
+  position: absolute;
+  left: 882px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.asterisco {
+  position: absolute;
+  left: 549px;
+  top: 6px;
+  min-width: 16px;
+  min-height: 19px;
+}
+
+#information_background {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  z-index: 1;
+}
+
+.divisao {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 25px;
+  left: 377px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  color: #242323;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 25px;
+  left: 369.3px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  color: #242323;
+  font-weight: 300;
+  font-family: "zurichlight";
+  min-height: 16px;
+  text-align: start;
+  align-items: flex-start;
+}
+
+#footer_ps {
+  position: absolute;
+  left: 377px;
+  top: 33px;
+  line-height: 1.067;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #c6ff02;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0) skewX(0);
+  transform-origin: top left;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}

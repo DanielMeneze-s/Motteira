@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "zurichlight";
+  src: url("../resources/fonts/zurich-light-bt-webfont.woff2") format("woff2"),
+    url("../resources/fonts/zurich-light-bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dddddd;
+  background-size: 100vw 100vh;
+}
+
+body.hide {
+  overflow-y: hidden;
+}
+
+.menu {
+  min-width: 100vw;
+  max-height: 100vh;
+  position: fixed;
+  top: 130vh;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 0 0vw #c6ff02, 0 0 0 0vh #c6ff02;
+  transition: box-shadow 1.05s ease-in-out 0s; /*voltar*/
+  z-index: 2;
+}
+
+
+
+/*######### hamburguer + animacao #########*/
+.hamburguer {
+  display: block;
+  background: #686868;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 7.9vh;
+  right: 6.8vw;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+  background: #686868;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.hamburguer::before {
+  top: -7px;
+}
+
+.hamburguer::after {
+  bottom: -7px;
+}
+
+.hamburguer-white {
+  display: block;
+  background: #dddddd;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 7.9vh;
+  right: 6.8vw;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.hamburguer-white::before,
+.hamburguer-white::after {
+  background: #dddddd;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.hamburguer-white::before {
+  top: -7px;
+}
+
+.hamburguer-white::after {
+  bottom: -7px;
+}
+
+input {
+  position: absolute;
+  right: 6.7vw;
+  top: 6.6vh;
+  width: 26px;
+  height: 28px;
+  opacity: 0;
+  z-index: 4;
+}
+
+/*######### inputs do checked #########*/
+input:checked ~ ul {
+  visibility: visible;
+  top: 2.2vh;
+  z-index: 3;
+}
+
+input:checked ~ ul {
+  visibility: visible;
+  top: 2.2vh;
+  z-index: 3;
+}
+
+input:checked ~ label .menu {
+  box-shadow: 0 0 0 130vw #c6ff02, 0 0 0 130vh #c6ff02;
+  background: #c6ff02;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer::after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+input:checked ~ label .hamburguer-white {
+  transform: rotate(45deg);
+  background: #686868;
+}
+
+input:checked ~ label .hamburguer-white::before {
+  transform: rotate(90deg);
+  top: 0;
+  background: #686868;
+}
+
+input:checked ~ label .hamburguer-white::after {
+  transform: rotate(90deg);
+  bottom: 0;
+  background: #686868;
+}
+
+/*######### inicio do texto do menu #########*/
+
+ul {
+  max-height: 100vh;
+  min-width: 100vw;
+  top: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  visibility: hidden;
+  transition: top 1s ease-in-out;
+  z-index: 2;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  font-size: 70px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300px;
+  font-family: "zurichlight";
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.pic {
+  position: absolute;
+  visibility: hidden;
+  background: red;
+  align-items: center;
+}
+
+.first_pic {
+  min-width: 136px;
+  min-height: 101px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px;
+  background-image: url("https://img.estadao.com.br/resources/jpg/7/8/1531482032387.jpg");
+  background-size: 136px 101px;
+}
+
+.first_pic > img {
+  max-width: 136px;
+  max-height: 101px;
+}
+
+.box {
+  border-bottom: 1px solid #212121;
+  min-height: 165px; /*min-height: 206.07px;*/
+  min-width: 1148px;
+  text-align: center;
+}
+
+.box:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+
+.box:not(:hover) {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition-duration: 0.8s;
+}
+
+.box:hover .first_pic {
+  background-image: url("https://media1.giphy.com/media/5UqWIbfRyfTjaRulMO/giphy.gif?cid=ecf05e472zkapwa40hj3wqx1ov5yodzyrq1b3qb47az0vnqg&rid=giphy.gif");
+  transition-duration: 0.8s;
+}
+
+.link {
+  min-height: 100.98px;
+  min-width: 100%;
+  letter-spacing: -3px;
+}
+
+.box,
+.link {
+  position: relative;
+  display: inline;
+  max-width: 1920px;
+  vertical-align: bottom;
+}
+
+.link:hover + .pic {
+  visibility: visible;
+}
+
+.project_title {
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.project_title_one_one {
+  display: inline;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_two_one {
+  display: inline;
+  text-decoration: none;
+  padding-right: 5px;
+  vertical-align: top;
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 105px;
+  color: #212121;
+  font-weight: 300;
+  font-family: "zurichlight";
+}
+
+.project_title_extra {
+  display: inline;
+  font-size: 29.999990463256836px;
+  vertical-align: 7%;
+  margin: 0 4px;
+}
+
+.project_object {
+  display: inline;
+  mix-blend-mode: multiply;
+}
+#project_object_um {
+  vertical-align: 26%;
+}
+#project_object_dois {
+  vertical-align: 7%;
+}
+#project_object_tres {
+  width: 35px;
+  height: 42px;
+  vertical-align: 7%;
+}
+#project_object_quatro {
+  width: 33px;
+  height: 33px;
+  vertical-align: 7%;
+}
+#project_object_cinco {
+  width: 39px;
+  height: 37px;
+  vertical-align: 7%;
+}
+#project_object_seis {
+  width: 23px;
+  height: 25px;
+  vertical-align: 7%;
+}
+
+.project_prop {
+  display: inline-block;
+  overflow: visible;
+  width: 214px;
+  white-space: wrap;
+  line-height: 29.9999942779541px;
+  margin-top: -0.0000019073486328125px;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29.999990463256836px;
+  color: rgba(33, 33, 33, 1);
+  letter-spacing: 0.1px;
+}
+
+#idp01,
+#idp02,
+#idp03,
+#idp04,
+#idp05,
+#idp06,
+#idp07,
+#idp08,
+#idp09 {
+  position: relative;
+  display: inline;
+  top: 4.2424%;
+}
