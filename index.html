@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        barba.hooks.enter((data) => {
+            addEvents();
+        });
+    </script>
+    <script>
+        window.addEventListener('load', reveal);
+        function reveal(){
+            var reveals = document.querySelector('.revela');
+            reveals.classList.add('active');
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="js\time.js"></script>
+    <script src="js\overflow.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script>
+                var lFollowX = 0,
+                    lFollowY = 0,
+                    x = 0,
+                    y = 0,
+                    friction = 1 / 30;
+
+                function moveBackground() {
+                x += (lFollowX - x) * friction;
+                y += (lFollowY - y) * friction;
+                
+                translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+                $('.title_background').css({
+                    '-webit-transform': translate,
+                    '-moz-transform': translate,
+                    'transform': translate
+                });
+
+                window.requestAnimationFrame(moveBackground);
+                }
+
+                $(window).on('mousemove click', function(e) {
+
+                var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+                var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+                lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+                lFollowY = (10 * lMouseY) / 100;
+
+                });
+
+                moveBackground();
+            </script>
+            <script type="text/javascript">
+                window.addEventListener('scroll', reveal);
+            
+                function reveal(){
+                  var reveals = document.querySelectorAll('.reveal');
+            
+                  for(var i = 0; i < reveals.length; i++){
+            
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = -1;
+            
+                    if(revealtop < windowheight - revealpoint){
+                      reveals[i].classList.add('active');
+                    }
+                    else{
+                      
+                    }
+                  }
+                }
+            </script>
+            <script type="text/javascript">
+                window.addEventListener('scroll', reveal);
+            
+                function reveal(){
+                  var reveals = document.querySelectorAll('.erveal');
+            
+                  for(var i = 0; i < reveals.length; i++){
+            
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = -1;
+            
+                    if(revealtop < windowheight - revealpoint){
+                      reveals[i].classList.add('active');
+                    }
+                    else{
+                      
+                    }
+                  }
+                }
+            </script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/about_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/menu_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/underline.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="css/project_bk.css">
+    <link rel="stylesheet" type="text/css" href="css/project_escazu.css">
+    <link rel="stylesheet" type="text/css" href="css/project_rebirth.css">
+    <link rel="stylesheet" type="text/css" href="css/project_estadao.css">
+    <link rel="stylesheet" type="text/css" href="css/project_happiest.css">
+    <title>Motteira</title>
+</head>
+<body data-barba="wrapper" id="real_body" class=""> 
+    <div class="loading-container">
+        <div class="loading-screen">
+        </div>
+    </div>
+    <main data-barba="container" data-barba-namespace="home">
+        <header id="navbar">
+            <div id="nav-bar">
+                <div class="nav-containers">
+                    <a class="nav-link" href="/index.html">Home</a>
+                    <span id="currently_home"></span>
+                </div>
+                <div class="nav-containers">
+                    <a class="nav-link" href="/about.html">About</a>
+                    <span id="nav-sub2"></span>
+                </div>
+            </div>
+       
+        <input class="menu-hamburguer" type="checkbox">
+        <label for="menu-hamburguer">
+            <div class="menu"></div>
+            <span class="hamburguer"></span>
+        </label>
+        <ul id="lista" class="ul_scroll">
+            <div class="box">
+                <div id="idp01">
+                    <a class="link" href="/project_estadao.html">
+                        <div class="project_title">
+                                <div class="project_title_one_one">A WORD CHANGES EVERYTHING</div>
+                            <img class="first_pic" src="" alt="">
+                        </div> 
+                        <div class="project_client" id="project_client_one">ESTADÃO</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div id="idp02">
+                    <a class="link" href="/project_escazu.html">
+                        <div class="project_client" id="project_client_two">ANISTIA</div>
+                        <div class="project_title">
+                            <img class="first_pic" src="" alt="">
+                            <div class="project_title_two_two">DONATING THE TRUTH</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div id="idp03">
+                    <a class="link" href="www.facebook.com">
+                        <div class="project_client" id="project_client_three">NETFLIX</div>
+                        <div class="project_title">
+                            <div class="project_title_one_three">QUEEN’S GAMBIT</div>
+                            <img class="first_pic" src="" alt=""> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div id="idp04">
+                    <a class="link" href="/project_happiest.html">
+                        <div class="project_title">
+                            <div class="project_title_one_for">THE HAPPIEST HOUR</div>
+                            <img class="first_pic" src="" alt=""> 
+                        </div>
+                        <div class="project_client" id="project_client_for">BUDWEISER</div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div id="idp05">
+                    <a class="link" href="/project_bk.html">
+                        <div class="project_client" id="project_client_five">BK</div>
+                        <div class="project_title">
+                            <img class="first_pic" src="" alt="">
+                            <div class="project_title_one_five">THE TIEBREAKING WHOPPER</div> 
+                        </div> 
+                    </a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div id="idp06">
+                    <a class="link" href="www.facebook.com">
+                        <div class="project_title">
+                            <div class="project_title_one_six">ALCOHOLIC ANONYMOUS VR</div>
+                            <img class="first_pic" src="" alt=""> 
+                        </div>  
+                        <div class="project_client" id="project_client_six">AA</div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div id="idp07">
+                    <a class="link" href="/project_rebirth.html">
+                        <div class="project_client" id="project_client_seven">AIRBNB</div>
+                        <div class="project_title">
+                            <img class="first_pic" src="" alt="">
+                            <div class="project_title_one_seven">REBIRTH EXTENSION</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+            </div>
+            </ul>
+       
+        </header>
+        <div id="logozada_escrita">Math&<img class="egif" src="" alt="">us Motta<a id="logozada" href="/index.html"></a></div>
+            
+        <style>
+            #real_body {
+                display: flex;
+                max-height: 100vh;
+                max-width: 100vw;
+                overflow-y: hidden;
+            }
+
+            #footer {
+                position: absolute;
+                bottom: 0;
+                height: 95px;
+                width: 100%;
+                background-color: #c6ff02;
+                font-size: 15px;
+                font-family: "zurichroman";
+                color: rgb(36, 35, 35);
+            }
+        </style>
+        <div class="page-main">
+            <div id="tudo_container">
+                <div id="time_wrapper">
+                    <div id="br_time">BR</div>
+                    <div id="time_box"></div>
+                </div>
+                <div class="h1zada_img_wrapper">
+                    <img class="h1zada" src="resources\img\pages\home\Imagem.png" alt="">
+                    <img class="h1zada_img" src="" alt="">
+                </div>
+                <div class="title_background" id="title_background"></div>
+            </div>   
+            <div id="bottom_wrapper">    
+                <div id="currently_job">
+                    <h3>CURRENTLY IN</h3>
+                    <h3>SUNO UNITED CREATORS</h3>
+                </div>
+                <div id="based">    
+                    <h2>based in Porto Alegre</h2>
+                    <div id="ask_icon">?</div>
+                    <div id="ask">Ou em qualquer lugar que você queira</div>
+                </div>
+            </div>
+        </div>
+</main>
+</body>
+
+<script>
+    barba.hooks.leave((data) => {
+        killEvents();
+    })
+</script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Barba Core -->
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- GSAP for animation -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- Main JS file -->
+    <script src="js/main.js"></script>
+</html>
