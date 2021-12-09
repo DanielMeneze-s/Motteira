@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Mondwest";
+  src: url("../resources/fonts/Mondwest-Regular.woff2") format("woff2"),
+    url("../resources/fonts/Mondwest-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeueBit";
+  src: url("../resources/fonts/NeueBit-Regular.woff2") format("woff2"),
+    url("../resources/fonts/NeueBit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "zurichlight";
+  src: url("../resources/fonts/zurich-light-bt-webfont.woff2") format("woff2"),
+    url("../resources/fonts/zurich-light-bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  cursor: default;
+}
+
+.page-header {
+  display: inline-block;
+  position: absolute;
+}
+
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+}
+
+#nav-bar {
+  position: absolute;
+  right: 10vw;
+  top: 3vh;
+  display: flex;
+  justify-content: start;
+  min-width: 210px;
+  height: 60px;
+  justify-content: space-around;
+  z-index: 3;
+}
+
+#nav-bar-inside {
+  position: absolute;
+  right: 10vw;
+  top: 3vh;
+  display: flex;
+  justify-content: start;
+  min-width: 270px;
+  height: 60px;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.nav-link {
+  display: inline;
+  font-size: 30px;
+  line-height: 94px;
+  letter-spacing: 0.2px;
+  color: #242323;
+  font-family: "NeueBit";
+  min-width: 0%;
+  min-height: 0%;
+  flex-direction: column;
+}
+
+.nav-link-white {
+  display: inline;
+  font-size: 30px;
+  line-height: 94px;
+  letter-spacing: 0.2px;
+  color: #dddddd;
+  font-family: "NeueBit";
+  min-width: 0%;
+  min-height: 0%;
+  flex-direction: column;
+}
+
+.nav-link-inside {
+  display: inline;
+  font-size: 30px;
+  line-height: 94px;
+  letter-spacing: 0.2px;
+  color: #242323;
+  font-family: "NeueBit";
+  min-width: 0%;
+  min-height: 0%;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.nav-containers:hover #nav-sub1 {
+  width: 51px;
+  transition-duration: 0.4s;
+}
+
+.nav-containers:hover #nav-sub2 {
+  width: 52px;
+  transition-duration: 0.4s;
+}
+
+.nav-containers:hover #nav-sub1-white {
+  width: 51px;
+  transition-duration: 0.4s;
+}
+
+.nav-containers:hover #nav-sub2-white {
+  width: 52px;
+  transition-duration: 0.4s;
+}
+
+.nav-containers {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-sub1 {
+  display: inline-block;
+  width: 0px;
+  height: 2px;
+  background: #000000;
+}
+
+#nav-sub2 {
+  display: inline-block;
+  width: 0px;
+  height: 2px;
+  background: #000000;
+}
+
+#nav-sub1-white {
+  display: inline-block;
+  width: 0px;
+  height: 2px;
+  background: #dddddd;
+}
+
+#nav-sub2-white {
+  display: inline-block;
+  width: 0px;
+  height: 2px;
+  background: #dddddd;
+}
+
+#logozada {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#logozada_escrita {
+  position: absolute;
+  top: 5.59vh;
+  left: 117px;
+  min-width: 98px;
+  font-size: 30px;
+  color: #242323;
+  font-weight: bold;
+  font-family: "NeueBit";
+  transition-duration: 0.8s;
+  z-index: 3;
+}
+
+.egif {
+  min-width: 10px;
+  min-height: 20px;
+  background-size: 10px 20px;
+  background-image: url("https://w7.pngwing.com/pngs/1021/478/png-transparent-ampersand-poster-symbol-letter-typography-brandsmark-text-logo-sign.png");
+}
+
+#logozada_white_escrita {
+  position: absolute;
+  top: 5.59vh;
+  left: 117px;
+  min-width: 98px;
+  z-index: 1;
+  font-size: 30px;
+  color: #dddddd;
+  font-weight: bold;
+  font-family: "NeueBit";
+  transition-duration: 0.8s;
+}
+
+#logozada_escrita:hover {
+  font-size: 32px;
+}
+
+#logozada_white_escrita:hover {
+  font-size: 32px;
+}
+
+#hamburguer-flex {
+  position: absolute;
+  right: 1.5vw;
+}
+
+body.blue {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 650px) {
+
+  #logozada_escrita {
+    visibility: hidden;
+    transition-duration: 0;
+  }
+
+  #nav-bar {
+    left: 0;
+    min-width: none;
+    max-width: 270px;
+  }
+}
+

@@ -1,0 +1,14 @@
+#cover_img_container {
+    min-width: 100vw;
+    min-height: 50vh;
+    background-color: #c6ff02;
+    background-size: cover;
+    background-position: center;
+}
+
+#cover_desc_container {
+    position: relative;
+    min-width: 100vw;
+    min-height: 50vh;
+}
+

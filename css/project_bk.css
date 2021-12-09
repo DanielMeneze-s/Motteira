@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Zurich BT';
+    src: url('../resources/fonts/ZurichBT-Roman.woff2') format('woff2'),
+        url('../resources/fonts/ZurichBT-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#navbar_holder {
+    position: relative;
+}
+
+#scroll_container {
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll_snap {
+    scroll-snap-align: start;
+    max-height: 100vh;
+}
+
+#project_img_one {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("resources/img/pages/project_bk/project_img_one.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#double_img_container_bk {
+    display: flex;
+    min-width: 100vw;
+    min-height: 50vh;
+}
+
+#project_img_two_bk {
+    width: 50vw;
+    max-height: 50vh;
+    background-image: url("/resources/img/pages/project_bk/burguer\ king\ 01.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#project_img_one_bk {
+    width: 50vw;
+    max-height: 50vh;
+    background-image: url("/resources/img/pages/project_bk/burguer\ king\ 02.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#project_img_three_bk {
+    width: 50vw;
+    max-height: 50vh;
+    background-image: url("/resources/img/pages/project_bk/burguer\ king\ 03.gif");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#project_img_four_bk {
+    width: 50vw;
+    max-height: 50vh;
+    background-image: url("/resources/img/pages/project_bk/burguer\ king\ 04.gif");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#iframe_wrapper {
+    width: 100%;
+    max-height: 100vh;
+    display: inline-block;
+    background-color: black;
+}
+
+#iframe_wrapper iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 1903px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.fromLeft {
+    position: relative;
+    transform: translate(150px,150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.fromRight {
+    position: relative;
+    transform: translate(-150px,150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.reveal.fromLeft.active{
+    transform: translate(0px);
+    opacity: 1;
+}
+
+.reveal.fromRight.active{
+    transform: translate(0px);
+    opacity: 1;
+}
+
+#desc_title {
+    position: absolute;
+    top: 19.83%;
+    left: 19.55%;
+    font-size: 80px;
+    font-family: 'Zurich BT';
+    color: rgb(33, 33, 33);
+    line-height: 1.314px;
+    -moz-transform: matrix( 0.93002815233938,0,0,0.93002815233938,0,0);
+    -webkit-transform: matrix( 0.93002815233938,0,0,0.93002815233938,0,0);
+    -ms-transform: matrix( 0.93002815233938,0,0,0.93002815233938,0,0);
+}
+
+.divisione_line.revela {
+    width: 0px;
+    height: 1px;
+    background-color: black;
+    transition: all 1s ease;
+  }
+  
+  .divisione_line.revela.active {
+    width: 1150px;
+  }
+
+#cover_desc_container_bk {
+    position: relative;
+    min-width: 100vw;
+    min-height: 50vh;
+    top: 28px;
+}
+
+.time_um.erveal.fromLeftReto.active {
+    transform: translateX(-106px);
+    opacity: 1;
+}
+
+#time_um_underline {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+    top: 16px;
+    left: 0;
+  }
+
+.time_um:hover #time_um_underline {
+    width: 96px;
+    transition-duration: 0.4s;
+  }
+
+#time_dois_underline {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+    top: 16px;
+    left: 0;
+}
+
+.time_dois:hover #time_dois_underline {
+    width: 95px;
+    transition-duration: 0.4s;
+}
+
+#time_tres_underline {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+    top: 16px;
+    left: 0;
+}
+
+.time_tres:hover #time_tres_underline {
+    width: 97px;
+    transition-duration: 0.4s;
+}
